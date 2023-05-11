@@ -7,14 +7,23 @@
     height: 100px;
     width: 100px;
     display: inline-block;
+    text-align: center;
+    
+    box-shadow: 5px 10px #e1e1e1;
     background-color: violet;
 }
 
 .shape2{
     height: 100px;
     width: 100px;
+    
     display: inline-block;
+    text-align: center;
     background-color: tomato;
+    
+}
+
+.shape2:hover{
     transform: translate(50px, 100px);
 }
 
@@ -22,82 +31,167 @@
     height: 100px;
     width: 100px;
     display: inline-block;
-    margin-left: 200px;
+    text-align: center;
+    
     background-color: aquamarine;
+   
+}
+
+.shape3:hover{
     transform: rotate(20deg);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .shape4{
     height: 100px;
     width: 100px;
-    margin-left: 200px;
     display: inline-block;
+    text-align: center;
+    
     background-color: teal;
+ 
+}
+
+.shape4:hover{
     transform: rotate(-20deg);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
 .shape5{
     height: 100px;
     width: 100px;
-    margin-left: 200px;
     display: inline-block;
+    text-align: center;
+    
     background-color: brown;
+    
+}
+
+.shape5:hover{
     transform: scale(0.5,0.5);
+    border-radius: 200px;
+    box-shadow: 5px 10px #e1e1e1;
 }
 
 .shape6{
     height: 100px;
     width: 100px;
-    margin-left: 200px;
     display: inline-block;
+    text-align: center;
+    
     background-color: yellowgreen;
+}
+
+.shape6:hover{
     transform: scaleX(0.8);
 }
 
 .shape7{
     height: 100px;
     width: 100px;
-    margin-left: 200px;
     display: inline-block;
+    text-align: center;
+    
     background-color: rgb(7, 95, 150);
+}
+
+.shape7:hover{
     transform: scaleY(0.8);
+
 }
 
 .shape8{
     height: 100px;
     width: 100px;
-    margin-left: 200px;
     display: inline-block;
+    text-align: center;
+    
     background-color: rgb(150, 126, 7);
-    transform: skewX(20deg);;
+}
+
+.shape8:hover{
+    transform: skewX(20deg);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .shape9{
     height: 100px;
     width: 100px;
-    margin-left: 200px;
     display: inline-block;
+    text-align: center;
+    
     background-color: rgb(131, 7, 150);
+    
+}
+
+.shape9:hover{
     transform: skewY(20deg);
+    margin-left: 20px;
+    margin-right: 20px;
+    
 }
 
 .shape10{
     height: 100px;
     width: 100px;
-    margin-left: 200px;
-    margin-right: 200px;
     display: inline-block;
-    margin-top: 40px;
+    text-align: center;
+    
     background-color: rgb(19, 150, 7);
-    transform: skew(20deg,20deg);
+    
 }
 
+.shape10:hover{
+    transform: skew(20deg,20deg);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mat{
+    display: inline-block;
+    
+}
 .shape11{
     height: 100px;
     width: 100px;
-    margin-top: 40px;
     display: inline-block;
+    text-align: center;
+    margin-top: -30px;
     background-color: rgb(7, 114, 150);
+}
+
+.mat:hover .shape11{
     transform: matrix(1, -0.3, 0, 1, 0, 0);
 }
+
+.text {
+    color: #333; 
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
+    line-height: 1.5; 
+    overflow-y: scroll;
+    margin-left: 40px;
+    margin-top: 20px;
+    text-align: justify; 
+    letter-spacing: 0.5px;
+    width: 300px;
+    display: inline-block;
+    height: 150px;
+    border: 2px solid rgb(114, 49, 5);
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .text p {
+    font-weight: 500; 
+    font-style: italic; 
+    text-decoration: none;
+    text-overflow: ellipsis; 
+    word-wrap: normal;
+    text-transform: uppercase; 
+  }
