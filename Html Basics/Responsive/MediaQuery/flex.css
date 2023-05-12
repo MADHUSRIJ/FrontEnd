@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.shape1{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(14, 56, 124);
+    color: white;
+    overflow: hidden;
+}
+
+p{
+    height: 200px;
+    width: 200px;
+}
+
+/*@media screen and (orientation:portrait) {
+    body::after{
+        content: "Portrait";
+    }
+    p{
+        color: white;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    body::after{
+        content: "Landscape";
+    }
+}
+
+@media screen and (hover:hover) and (color){
+    .shape1::after{
+        background-color: rgb(204, 36, 7);
+    }
+}*/
+
+@media screen and (max-width:500px){
+    .shape1{
+        background-color: rgb(204, 36, 7);
+        overflow: hidden;
+    }
+    body{
+        /*color: white;*/
+        background-color: aquamarine;
+        text-decoration: white;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .shape1{
+        background-color:pink;
+        overflow: hidden;
+    }
+    body{
+        /*color: yellow;*/
+        text-shadow: 5px 5px blue;
+        background-color: green;
+        text-decoration: yellow;
+    }
+}

@@ -1,0 +1,12 @@
+
+.container{   
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    width: 1200px;
+    align-content: start;
+    align-self: stretch;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+

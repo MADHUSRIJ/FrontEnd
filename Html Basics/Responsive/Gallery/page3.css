@@ -1,0 +1,12 @@
+
+.container{   
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 4000px;
+    margin-left: 500px;
+    align-content: center;
+    align-self: stretch;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
