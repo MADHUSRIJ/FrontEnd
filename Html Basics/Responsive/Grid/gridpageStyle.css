@@ -73,10 +73,10 @@ body{
 }
 
 .content .mainImage{
-    animation: fakeIn 10s ease-in-out forwards; 
+    animation: fadeIn 10s ease-in-out forwards; 
 }
 
-@keyframes fakeIn {
+@keyframes fadeIn {
     0% { 
       opacity: 0; 
     }
