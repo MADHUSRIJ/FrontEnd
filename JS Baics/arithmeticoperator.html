@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> Arithmetic Operators</title>
+    </head>
+    <body>
+        
+        <script>
+        function operations(){
+            var a = parseFloat(document.getElementById("input1").value);
+            var b = parseFloat(document.getElementById("input2").value);
+            var op = document.getElementById("operator").value;
+            var ans;
+            if(op == "+"){
+                ans = a + b;
+            } else if(op == "-"){
+                ans = a - b;
+            } else if(op == "*"){
+                ans = a * b;
+            } else if(op == "/"){
+                ans = a / b;
+            } else if(op == "%"){
+                ans = a % b;
+            }
+
+            document.getElementById("answer").innerHTML='Result : '+ a + " "+ op +" " + b + " = " + ans;
+        }
+        </script> 
+    
+        <center>
+            <input id="input1" type="number" placeholder="Number 1">
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+            <input id="input2" type="number" placeholder="Number 2">
+            <button onclick="operations()">Submit</button>
+            <p id="answer"></p>
+        </center>
+    </body>
+</html>
