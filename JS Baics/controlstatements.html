@@ -36,7 +36,6 @@
 
             .content button{
                 margin-left: 200px;
-                color: #fff;
                 font-weight: bold;
                 background-color: rgb(131, 204, 228);
                 border: 1px solid rgb(75, 181, 216);
@@ -115,26 +114,28 @@
             }
 
             function calculateGifts() {
-            var visits = parseInt(document.getElementById("visits").value);
-            var purchaseAmount = parseFloat(document.getElementById("purchaseAmount").value);
+                var visits = parseInt(document.getElementById("visits").value);
+                var purchaseAmount = parseFloat(document.getElementById("purchaseAmount").value);
 
-            var welcomeGift = visits >= 1 ? 100 : 0;
-            var gift = purchaseAmount >= 5000 ? 3000 : (purchaseAmount >= 3000 ? 1500 : (purchaseAmount >= 1000 ? 500 : 0)) ;
+                var welcomeGift = visits >= 1 ? 100 : 0;
+                var gift = purchaseAmount >= 5000 ? 3000 : (purchaseAmount >= 3000 ? 1500 : (purchaseAmount >= 1000 ? 500 : 0)) ;
 
-            var totalGift = welcomeGift + gift;
+                var totalGift = welcomeGift + gift;
 
-            document.getElementById("giftResult").innerHTML = "Total Gifts: " + totalGift + " GV";
+                document.getElementById("giftResult").innerHTML = "Total Gifts: " + totalGift + " GV";
             }
 
             function showDiv(divId) {
-            var divs = document.getElementsByClassName("content");
-            for (var i = 0; i < divs.length; i++) {
-                divs[i].classList.add("hidden");
+                var divs = document.getElementsByClassName("content");
+                for (var i = 0; i < divs.length; i++) {
+                    divs[i].classList.add("hidden");
+                }
+                var selectedDiv = document.getElementById(divId);
+                selectedDiv.classList.remove("hidden");
             }
-            var selectedDiv = document.getElementById(divId);
-            selectedDiv.classList.remove("hidden");
-            }
+
         </script>
+
         <div style="display: flex;justify-content: space-between;">
             <div style="background-color: lightblue;padding: 10px;height: 550px;">
                 <h1> Control Statements Exercise</h1>
