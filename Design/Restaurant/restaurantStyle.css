@@ -1,0 +1,155 @@
+body{
+    margin: 0px 100px 0px 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main{
+    display: flex;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main_left{
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 700px;
+}
+
+.bow {
+    position: relative;
+  }
+  
+  .bow::before,
+  .bow::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .bow::before {
+    left: -10px;
+    background-color: #f8c300;
+    transform: rotate(-45deg);
+    transform: translateX(-30px);
+    animation: slide 3s ease-in-out;
+  }
+  
+  .bow::after {
+    right: -10px;
+    background-color: #00c2f870;
+    transform: rotate(45deg);
+    animation: roll 3s ease-in-out;
+  }
+  
+  .bow-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    opacity: 0;
+    animation: welcome 3s ease-in-out;
+  }
+
+  .bow:hover::before {
+    animation: slide 3s ease-in-out;
+  }
+  
+  .bow:hover::after {
+    animation: roll 3s ease-in-out;
+  }
+  
+  .bow:hover .bow-text {
+    animation: welcome 3s ease-in-out;
+  }
+  
+  @keyframes welcome {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes roll {
+    0% {
+        transform: translate(0px,0px);
+    }
+    20% {
+        transform: translate(35px);
+    }
+    40%{
+        transform: translate(35px,10px);
+    }
+    60%{
+        transform: translate(35px,10px);
+    }
+    80%{
+        transform: translate(35px);
+    }
+    100% {
+        transform: translate(0px,0px);
+    }
+  }
+
+  @keyframes slide{
+    0%{
+        transform: translateX(-30px);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(-30px);
+    }
+  }
+  
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a i{
+    margin-right: 10px;
+}
+
+.navbar a:hover {
+    color: #c55555;
+    font-weight: bold;
+}
+
+.main_right{
+    width: 300px;
+    background-color: #c55555;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 0 0 200px 200px;
+    animation-name: bannerIn;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bannerIn {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+        box-shadow: 50px 50px rgba(241, 176, 176, 0.6);
+    }
+}
+
